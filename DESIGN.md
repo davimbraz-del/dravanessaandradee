@@ -111,9 +111,9 @@ The visual rejections the owner set: no pure black text, no loud color, yellow u
 A warm neutral palette of paper and sand, lifted by a single soft yellow.
 
 ### Primary
-- **Smile Yellow** (smile-yellow): primary buttons, the floating WhatsApp button, the hand-drawn smile stroke under the hero headline, small dots on service icons.
+- **Smile Yellow** (smile-yellow): primary buttons, the floating WhatsApp button, and the hand-drawn smile stroke under the hero headline and the closing CTA line.
 - **Deep Smile** (smile-yellow-deep): stars, contact icons, active-nav underline, separators in the credential line. Never as a large fill.
-- **Soft Smile** (smile-yellow-soft): the closing CTA band, text selection, icon wells on badges.
+- **Soft Smile** (smile-yellow-soft): the closing CTA band and text selection.
 
 ### Neutral
 - **Paper White** (white): the About section ground, cards, photo borders.
@@ -158,13 +158,13 @@ Hybrid: tonal layering does most of the work (paper on sand), and soft brown-tin
 
 ### Shadow Vocabulary
 - **Rest** (`0 1px 2px rgba(58,51,44,.05), 0 2px 8px rgba(58,51,44,.04)`): service cards and the map at rest.
-- **Lift** (`0 2px 4px rgba(58,51,44,.04), 0 12px 28px -8px rgba(58,51,44,.12)`): testimonial cards, badges, card hover.
+- **Lift** (`0 2px 4px rgba(58,51,44,.04), 0 12px 28px -8px rgba(58,51,44,.12)`): testimonial cards, card hover.
 - **Float** (`0 4px 10px rgba(58,51,44,.05), 0 28px 60px -18px rgba(58,51,44,.22)`): arch photo frames and the mobile menu sheet.
 - **Warm action** (`0 1px 2px rgba(58,51,44,.08), 0 8px 20px -8px rgba(201,152,40,.55)`): primary yellow button.
 
 ## Shapes
 
-Pills for every action, arches for every photograph (fully round top, 24px bottom), 16px for small tiles and badges, 24px for cards and the map. Hairlines are 1px Sand 200; the only decorative line work is the yellow smile curve and a single 1.5px sand arch outline offset behind the About photo.
+Pills for every action, arches for every photograph (fully round top, 24px bottom), 16px for small tiles, 24px for cards and the map. Hairlines are 1px Sand 200; the only decorative line work is the yellow smile curve and a single 1.5px sand arch outline offset behind the About photo.
 
 ## Components
 
@@ -190,10 +190,10 @@ Pills for every action, arches for every photograph (fully round top, 24px botto
 - **Mobile:** two-line toggle morphing to an X; a sheet drops from the top with serif links at 1.5rem and a full-width yellow CTA.
 
 ### Arch Photo Frame (signature)
-Arch-topped frame with a 6px white border and Float shadow; in the hero an organic Sand 200 blob breathes slowly behind it and a white badge ("Formada pela FOP/UPE") overlaps its lower left edge.
+Arch-topped frame with a 6px white border and Float shadow; in the hero an organic Sand 200 blob breathes slowly behind it. Nothing overlaps the photograph.
 
 ### Smile Stroke (signature)
-A single hand-drawn yellow curve under the last phrase of the hero headline that draws itself once on load (1.2s, ease-in-out). Used once per page.
+A hand-drawn yellow curve under the last phrase of a headline that draws itself once (1.2s, ease-in-out): under "cuidar de pessoas." on load and under "seu sorriso?" when the CTA band enters. At most twice per page, opening and closing.
 
 ### Floating WhatsApp
 60px yellow pill fixed bottom-right with safe-area inset; on fine pointers it expands on hover to reveal "Agendar consulta". Hidden while the mobile menu is open.
@@ -212,4 +212,5 @@ A single hand-drawn yellow curve under the last phrase of the hero headline that
 - **Don't** fill large areas with Smile Yellow; the CTA band uses Soft Smile.
 - **Don't** set the hero headline in italic; the smile stroke is the emphasis.
 - **Don't** put eyebrow labels above section headings.
-- **Don't** mix icon styles; icons are 24px line drawings at 1.35px stroke.
+- **Don't** mix icon styles; icons are 24px line drawings at 1.35px stroke, in Ink, without notification-style dots.
+- **Don't** clip revealed elements; entrance masks clear to `clip-path: none` so shadows survive.

@@ -104,6 +104,11 @@ document.documentElement.classList.add("js");
         entries.forEach((entry) => {
           if (entry.isIntersecting) {
             entry.target.classList.add("is-visible");
+            if (entry.target.dataset.reveal === "mask") {
+              entry.target.addEventListener("transitionend", (e) => {
+                if (e.propertyName === "clip-path") entry.target.classList.add("is-done");
+              }, { once: false });
+            }
             io.unobserve(entry.target);
           }
         });

@@ -15,7 +15,7 @@ Audience: patients on phones deciding whether to trust a recently graduated dent
 
 THESIS: A bright, sanitized, welcoming consultório rendered as paper-white and sand, where the only warmth that moves is a soft yellow "smile" stroke. Refuses the clinical blue-and-teal dental template and stock-smile hero.
 
-OWN-WORLD: #FFFFFF / #FAF8F5 grounds, #EDE6DB and #D9CBB6 sand fields that own whole regions (organic blob, testimonials band), #E8C468 only on primary buttons, icon details, the smile stroke and the CTA band tint. Text #3A332C. Cormorant Garamond display, Manrope body. Arch-topped photo frames, 1.25px line icons, hairline sand borders, soft offset shadows, 14–20px radii.
+OWN-WORLD: #FFFFFF / #FAF8F5 grounds, #EDE6DB and #D9CBB6 sand fields that own whole regions (organic blob, testimonials band), #E8C468 only on primary buttons, icon details, the smile stroke and the CTA band tint. Text #3A332C. Playfair Display display (Cormorant dropped: circumflex rendering on 'você'), Manrope body. Arch-topped photo frames, 1.25px line icons, hairline sand borders, soft offset shadows, 14–20px radii.
 
 STORY: The visitor meets the promise, sees the credentials, hears Vanessa in first person, scans services, reads (example) testimonials, and taps WhatsApp — from any section in one tap.
 
