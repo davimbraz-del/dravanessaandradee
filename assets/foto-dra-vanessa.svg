@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 1000" role="img" aria-label="Espaço reservado para a foto da Dra. Vanessa Andrade">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#F4EFE7"/>
+      <stop offset="1" stop-color="#E6DCCB"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="1000" fill="url(#bg)"/>
+  <g fill="none" stroke="#B5A285" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+    <ellipse cx="400" cy="400" rx="112" ry="132"/>
+    <path d="M362 522v46M438 522v46"/>
+    <path d="M160 1000c0-210 92-380 240-412 148 32 240 202 240 412"/>
+    <path d="M330 590l70 120 70-120"/>
+    <path d="M400 710v160"/>
+    <path d="M300 760h60"/>
+  </g>
+  <text x="400" y="940" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="26" letter-spacing="2" fill="#8C7A60">FOTO DA DRA. VANESSA</text>
+</svg>

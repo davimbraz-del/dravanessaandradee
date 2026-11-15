@@ -1,0 +1,71 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-11-15T00:00:00Z",
+  "title": "Design System: Dra. Vanessa Andrade",
+  "extensions": {
+    "colorMeta": {
+      "white": { "role": "neutral", "displayName": "Paper White", "tonalRamp": ["#3A332C","#5E554B","#8C7F70","#B5A994","#D9CFC0","#ECE6DC","#F7F4EF","#FFFFFF"] },
+      "offwhite": { "role": "neutral", "displayName": "Off-White", "tonalRamp": ["#3B352E","#5F574D","#877D70","#AFA496","#D2C9BC","#E8E2D8","#F3EFE9","#FAF8F5"] },
+      "sand-200": { "role": "neutral", "displayName": "Sand", "tonalRamp": ["#3A3329","#5C5141","#7F715C","#A39279","#C3B39B","#D9CBB6","#EDE6DB","#F7F3EC"] },
+      "smile-yellow": { "role": "primary", "displayName": "Smile Yellow", "tonalRamp": ["#3D2F0B","#634C14","#8C6C1F","#B48C2D","#D9AF45","#E8C468","#F2DC9F","#FBF1D6"] },
+      "ink": { "role": "neutral", "displayName": "Ink", "tonalRamp": ["#1F1B17","#3A332C","#5E554B","#6F655A","#8C8174","#AFA597","#D3CBC0","#EFEAE3"] }
+    },
+    "typographyMeta": {
+      "display": { "displayName": "Display", "purpose": "Hero headline only, roman, with the smile stroke." },
+      "headline": { "displayName": "Headline", "purpose": "Section titles and the CTA line." },
+      "title": { "displayName": "Title", "purpose": "Card titles." },
+      "body": { "displayName": "Body", "purpose": "Paragraphs, max 62ch." },
+      "label": { "displayName": "Label", "purpose": "Credential line, contact labels, placeholder chips; uppercase." }
+    },
+    "shadows": [
+      { "name": "rest", "value": "0 1px 2px rgba(58,51,44,.05), 0 2px 8px rgba(58,51,44,.04)", "purpose": "Service cards and map at rest." },
+      { "name": "lift", "value": "0 2px 4px rgba(58,51,44,.04), 0 12px 28px -8px rgba(58,51,44,.12)", "purpose": "Testimonials, badges, card hover." },
+      { "name": "float", "value": "0 4px 10px rgba(58,51,44,.05), 0 28px 60px -18px rgba(58,51,44,.22)", "purpose": "Arch photo frames, mobile menu sheet." },
+      { "name": "warm-action", "value": "0 1px 2px rgba(58,51,44,.08), 0 8px 20px -8px rgba(201,152,40,.55)", "purpose": "Primary yellow button." }
+    ],
+    "motion": [
+      { "name": "ease-out", "value": "cubic-bezier(0.16, 1, 0.3, 1)", "purpose": "Entrances, presses, hovers." },
+      { "name": "ease-in-out", "value": "cubic-bezier(0.65, 0, 0.35, 1)", "purpose": "Smile stroke draw and blob breathing." },
+      { "name": "reveal", "value": "900ms ease-out, 22px rise, 90ms stagger in groups", "purpose": "One-time scroll entrances." }
+    ],
+    "breakpoints": [
+      { "name": "sm", "value": "560px" },
+      { "name": "md", "value": "640px" },
+      { "name": "lg", "value": "900px" },
+      { "name": "xl", "value": "1000px" }
+    ]
+  },
+  "components": [
+    { "name": "Primary Button", "kind": "button", "refersTo": "button-primary", "description": "Yellow pill for booking actions.",
+      "html": "<a class=\"ds-btn-primary\" href=\"#\">Agendar pelo WhatsApp</a>",
+      "css": ".ds-btn-primary{display:inline-flex;align-items:center;min-height:54px;padding:.95em 1.7em;border-radius:999px;background:#E8C468;color:#3A332C;font:600 1rem Manrope,system-ui,sans-serif;text-decoration:none;box-shadow:0 1px 2px rgba(58,51,44,.08),0 8px 20px -8px rgba(201,152,40,.55);transition:transform 160ms cubic-bezier(.16,1,.3,1),background-color 200ms}.ds-btn-primary:hover{background:#EDCD7C;transform:translateY(-1px)}.ds-btn-primary:active{transform:scale(.97)}.ds-btn-primary:focus-visible{outline:2px solid #3A332C;outline-offset:3px}" },
+    { "name": "Outline Button", "kind": "button", "refersTo": "button-outline", "description": "Secondary pill with ink stroke.",
+      "html": "<a class=\"ds-btn-outline\" href=\"#\">Conheça os serviços</a>",
+      "css": ".ds-btn-outline{display:inline-flex;align-items:center;min-height:54px;padding:.95em 1.7em;border:1.5px solid #3A332C;border-radius:999px;color:#3A332C;font:600 1rem Manrope,system-ui,sans-serif;text-decoration:none;transition:background-color 200ms,color 200ms}.ds-btn-outline:hover{background:#3A332C;color:#FAF8F5}.ds-btn-outline:focus-visible{outline:2px solid #3A332C;outline-offset:3px}" },
+    { "name": "Dark Button", "kind": "button", "refersTo": "button-dark", "description": "Ink pill used on the soft-yellow CTA band.",
+      "html": "<a class=\"ds-btn-dark\" href=\"#\">Agendar minha consulta</a>",
+      "css": ".ds-btn-dark{display:inline-flex;align-items:center;min-height:60px;padding:1.05em 2.1em;border-radius:999px;background:#3A332C;color:#FAF8F5;font:600 1.0625rem Manrope,system-ui,sans-serif;text-decoration:none;box-shadow:0 2px 4px rgba(58,51,44,.12),0 16px 32px -14px rgba(58,51,44,.5)}.ds-btn-dark:hover{background:#2C2621}.ds-btn-dark:focus-visible{outline:2px solid #3A332C;outline-offset:3px}" },
+    { "name": "Service Card", "kind": "card", "refersTo": "card-service", "description": "White card with sand icon well and yellow dot.",
+      "html": "<div class=\"ds-card\"><span class=\"ds-card-icon\"><svg viewBox=\"0 0 24 24\" width=\"28\" height=\"28\" fill=\"none\" stroke=\"#3A332C\" stroke-width=\"1.35\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M7.5 3.8c1.6 0 2.6.9 4.5.9s2.9-.9 4.5-.9c2.3 0 3.8 1.9 3.8 4.6 0 2.5-1.1 3.9-1.6 6.2-.6 2.8-.9 5.6-2.4 5.6-1.8 0-1.6-4.9-4.3-4.9s-2.5 4.9-4.3 4.9c-1.5 0-1.8-2.8-2.4-5.6-.5-2.3-1.6-3.7-1.6-6.2 0-2.7 1.5-4.6 3.8-4.6Z\"/></svg></span><h3 class=\"ds-card-title\">[SERVIÇO]</h3><p class=\"ds-card-text\">Descrição curta do serviço.</p></div>",
+      "css": ".ds-card{max-width:340px;padding:1.75rem 1.5rem 1.9rem;background:#fff;border:1px solid rgba(217,203,182,.55);border-radius:24px;box-shadow:0 1px 2px rgba(58,51,44,.05),0 2px 8px rgba(58,51,44,.04);transition:transform 320ms cubic-bezier(.16,1,.3,1),box-shadow 320ms}.ds-card:hover{transform:translateY(-4px);box-shadow:0 2px 4px rgba(58,51,44,.04),0 12px 28px -8px rgba(58,51,44,.12)}.ds-card-icon{position:relative;display:grid;place-items:center;width:56px;height:56px;margin-bottom:1.4rem;border-radius:50%;background:#F4EFE7}.ds-card-icon::after{content:'';position:absolute;top:4px;right:2px;width:9px;height:9px;border-radius:50%;background:#E8C468}.ds-card-title{margin:0;font:500 1.32rem/1.25 'Playfair Display',Georgia,serif;color:#3A332C}.ds-card-text{margin:.55rem 0 0;font:400 .98rem/1.6 Manrope,system-ui,sans-serif;color:#5E554B}" },
+    { "name": "Placeholder Chip", "kind": "chip", "refersTo": "chip-placeholder", "description": "Marks content that must be replaced.",
+      "html": "<span class=\"ds-chip\">Exemplo · substituir</span>",
+      "css": ".ds-chip{display:inline-block;padding:.25rem .65rem;border:1px dashed #A8957A;border-radius:999px;font:600 .7rem Manrope,system-ui,sans-serif;letter-spacing:.06em;text-transform:uppercase;color:#6F655A}" },
+    { "name": "Navigation", "kind": "nav", "description": "Desktop nav with wiping yellow underline.",
+      "html": "<nav class=\"ds-nav\"><a href=\"#\" class=\"is-active\">Sobre</a><a href=\"#\">Serviços</a><a href=\"#\">Contato</a></nav>",
+      "css": ".ds-nav{display:flex;gap:2rem;font:500 .95rem Manrope,system-ui,sans-serif}.ds-nav a{position:relative;padding:.4rem 0;color:#5E554B;text-decoration:none}.ds-nav a::after{content:'';position:absolute;left:0;right:0;bottom:0;height:1.5px;background:#D9AF45;transform:scaleX(0);transform-origin:right;transition:transform 320ms cubic-bezier(.16,1,.3,1)}.ds-nav a:hover,.ds-nav a.is-active{color:#3A332C}.ds-nav a:hover::after,.ds-nav a.is-active::after{transform:scaleX(1);transform-origin:left}" }
+  ],
+  "narrative": {
+    "northStar": "O Consultório de Papel",
+    "overview": "A bright, freshly cleaned consultório translated to the screen: paper-white and off-white grounds, sand fields that hold whole regions, and one warm yellow that behaves like a smile — rare, curved and kind. Type does the talking: a calm, high-contrast serif for everything that speaks and a clean geometric sans for everything that informs. Photography sits in arch-topped frames.",
+    "keyCharacteristics": ["Paper-white / off-white grounds with full-width sand bands for rhythm.", "One warm yellow accent reserved for primary actions, icon details and the smile stroke.", "Arch-topped photo frames and pill buttons; 16–24px corners elsewhere.", "Thin 1.35px line icons drawn in one family.", "Soft, brown-tinted, offset shadows; never hard or colored halos."],
+    "rules": [
+      { "name": "The One Smile Rule", "body": "Yellow appears as fills only on actions (primary button, floating WhatsApp) and the CTA band tint; everywhere else it is a detail under 10px or a stroke.", "section": "colors" },
+      { "name": "The No Black Rule", "body": "Text is Ink at its darkest; #000 never appears.", "section": "colors" },
+      { "name": "The Roman Hero Rule", "body": "The hero headline stays roman; emphasis comes from the smile stroke, not italics. Italic is reserved for quoted patient voices.", "section": "typography" },
+      { "name": "The Lining Numerals Rule", "body": "Headings use lining-nums so numbers never drop below the baseline.", "section": "typography" }
+    ],
+    "dos": ["Do route every booking action to WhatsApp with a yellow or dark pill.", "Do frame photography in arches and keep the sand blob behind the hero portrait.", "Do keep text in Ink / Ink Soft and body measure under 62ch.", "Do gate hover styles behind (hover: hover) and (pointer: fine) and give every control an :active press.", "Do keep entrance motion one-time and content visible by default; respect prefers-reduced-motion."],
+    "donts": ["Don't use pure black (#000) for text or fills.", "Don't fill large areas with Smile Yellow; the CTA band uses Soft Smile.", "Don't set the hero headline in italic; the smile stroke is the emphasis.", "Don't put eyebrow labels above section headings.", "Don't mix icon styles; icons are 24px line drawings at 1.35px stroke."]
+  }
+}
